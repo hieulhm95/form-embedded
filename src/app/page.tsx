@@ -6,10 +6,18 @@ export default function Home() {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play().catch(error => {
-        console.error('Error attempting to play', error);
-      });
+    const video = videoRef.current;
+    if (video) {
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => {
+            console.log('Video is playing');
+          })
+          .catch(error => {
+            console.error('Error attempting to play', error);
+          });
+      }
     }
   }, []);
 
@@ -22,6 +30,7 @@ export default function Home() {
           autoPlay
           loop
           muted
+          playsInline
         />
       </div>
     </main>
