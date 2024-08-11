@@ -26,7 +26,7 @@ export default function Home() {
       <div className={styles.responsiveVideo}>
         <video
           ref={videoRef}
-          src="https://first-game-6a2f1.web.app/assets/tiktok-tethut-animation-1.mp4"
+          src="https://firebasestorage.googleapis.com/v0/b/first-game-6a2f1.appspot.com/o/kv-tethut-animation.mp4?alt=media&token=c52015b7-d1f7-4ef0-b943-9dfe57593a24"
           autoPlay
           loop
           muted
