@@ -26,7 +26,7 @@ export default function Home() {
       <div className={styles.responsiveVideo}>
         <video
           ref={videoRef}
-          src="https://firebasestorage.googleapis.com/v0/b/first-game-6a2f1.appspot.com/o/kv-tethut-animation.mp4?alt=media&token=c52015b7-d1f7-4ef0-b943-9dfe57593a24"
+          src="https://firebasestorage.googleapis.com/v0/b/first-game-6a2f1.appspot.com/o/KV__130824_10s.mp4?alt=media&token=0b7d87ab-48e3-495f-a141-799259c91c41"
           autoPlay
           loop
           muted
